@@ -15,5 +15,5 @@
   - MySQL-python
   - rsync
 - name: Config Hostname
-  hostname: name={{hostname}}
+  hostname: name={{ansible_hostname}}
 

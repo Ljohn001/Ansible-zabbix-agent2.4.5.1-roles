@@ -1,9 +1,9 @@
 ---
 - name: Install zabbix agent 2.4.5
-  hosts: webserver
+  hosts: websvrs
   remote_user: root
   vars:
-    - zabbix_server: 172.16.100.61
+    - zabbix_server: 192.168.1.125
   roles: 
     - common
     - zabbix-Agent

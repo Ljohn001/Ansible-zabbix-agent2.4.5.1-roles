@@ -1,4 +1,6 @@
 ---
+- name: Create zabbix directory
+  file: path=/opt/zabbix state=directory
 - name: Copy zabbix rpm and scripts
   copy: src={{item}} dest=/opt/zabbix
   with_items:
